@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="DAZAKO Classes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div style="position:absolute;z-index:9999;left:0;right:0;" class="container w-100">
+        <div class="d-flex justify-content-between align-items-center ms-12 ps-12 pe-11 pt-4 pb-3">
+            <div style="font-size: 12px;" class="fw-bold ms-12">
+                <span style="color: #FF8FA3;">Call us</span>
+                <a href="tel:+15550100100" class="fg-white text-white text-decoration-none ms-1">+1 555 010 0100</a>
+            </div>
+            <div class="d-flex align-items-center gap-1 me-1">
+                <a href="#" aria-label="#" class="skew-social fg-white text-white text-decoration-none">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="Facebook" class="skew-social fg-white text-white text-decoration-none">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="skew-social fg-white text-white text-decoration-none">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="navbar md:navbar-expand navbar-fitness rounded-0 bg-transparent px-11 pt-1 pb-0">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand d-inline-flex align-items-center gap-3 ms-12 ps-12 py-0" href="#">
+                    <div
+                        class="logo-box1 bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                        <i style="color: #E1193E;font-size: 32px;" class="fa-solid fa-weight-hanging"></i>
+                    </div>
+                    <div class="d-flex flex-column lh-1">
+                        <span style="color:white;font-size: 20px;"
+                            class="brand-title fg-white text-uppercase fw-bolder">DAZKO</span>
+                        <span style="color:#FF8FA3;"
+                            class="brand-subtitle text-uppercase fst-italic fw-bold mt-1">Strength &
+                            Fitness</span>
+                    </div>
+                </a>
+
+                <button class="btn-icon navbar-toggler bg-transparent border-0" type="button" data-bs-theme="dark"
+                    data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer" aria-controls="navbarDarkDrawer"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <dialog style="background-color: #111111; color: white;"
+                    class="drawer drawer-end text-bg-dark flex-grow-1" tabindex="-1" id="navbarDarkDrawer"
+                    aria-labelledby="navbarDarkDrawerLabel">
+                    <div class="drawer-header">
+                        <h5 style="color: white;" class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="drawer"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="drawer-body md:d-flex md:flex-row md:align-items-center nav-line-wrapper mb-2 md:mb-0">
+                        <ul class="nav navbar-nav md:flex-row md:gap-4 me-md-4">
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZKO.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: #FF8FA3;"
+                                    class="nav-link active text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    aria-current="page"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZKO%20About%20us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20trainers.html">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20Classes.html">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20Shedules.html">Schedules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-3"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/Dazko_%20Gym,%20Strength%20and%20Fitness%20Training/DAZAKO%20contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <button style="color: white;background-color: #E1193E;"
+                            class="btn btn-danger btn-dazko-slant text-uppercase fw-bold rounded-0 mt-3 md:mt-0"
+                            type="button">Become a
+                            member</button>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000"
+        data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative" data-bs-interval="4000">
+                <img src="imgi_33_bg_1.jpeg" class="d-block w-100 hero-img" alt="Strength Training">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <p class="breadcrumb-text">
+                        HOME <i style="font-size: 9px;" class="fa-solid fa-arrow-right"></i> CLASSES <i
+                            style="font-size: 9px;" class="fa-solid fa-arrow-right"></i>
+                    </p>
+                    <h1 style="font-size: 50px;" class="fst-italic fw-bold">OUR FITNESS CLASSES</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Our Classes section-->
+    <div class="container-fluid px-2 p-12">
+        <div class="row g-2">
+            <!-- Card 1 -->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_35_classes-1.jpeg" class="w-100 h-100 object-fit-cover" alt="Body Building">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Body Building
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2-->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_37_classes-2.jpeg" class="w-100 h-100 object-fit-cover" alt="Weight Lifting">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Weight Lifting
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_39_classes-3.jpeg" class="w-100 h-100 object-fit-cover" alt="Cardio">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Cardio
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_18_classes-4.jpeg" class="w-100 h-100 object-fit-cover" alt="Body Building">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Body Building
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2-->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_19_classes-5.jpeg" class="w-100 h-100 object-fit-cover" alt="Weight Lifting">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Weight Lifting
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_21_classes-6.jpeg" class="w-100 h-100 object-fit-cover" alt="Cardio">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Cardio
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination custom-pagination theme-dark gap-2 justify-content-center mt-12">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next"><i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--fotter-->
+    <div style="background-color: #030513;">
+        <div class="container p-12">
+            <div class="row d-flex justify-content-center aligen-item-center">
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start align-items-start">
+                        <a class="navbar-brand d-inline-flex align-items-center mt-9 ms-3" href="#">
+                            <div
+                                class="logo-box1 bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i style="color: #E1193E;font-size: 32px;" class="fa-solid fa-weight-hanging"></i>
+                            </div>
+                            <div class="d-flex flex-column lh-1">
+                                <span style="color:white;font-size: 20px;"
+                                    class="brand-title fg-white text-uppercase fw-bolder">DAZKO</span>
+                                <span style="color:#FF8FA3;"
+                                    class="brand-subtitle text-uppercase fst-italic fw-bold mt-1">Strength &
+                                    Fitness</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <p style="font-size: 13px;color: #B4B4B9;" class="mt-12 ms-3">
+                            A small river named Duden flows by their place and<br> supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start gap-4 mt-12">
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-x-twitter mt-4"></i>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-facebook-f mt-4"></i>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-instagram mt-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <h1 style="font-size: 22px;color: white;" class="fw-bold mt-12">Explore</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-12"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-11 pt-1">About us</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Trainers Team</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Awesome Classes</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Pricing Packages</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Latest News</h1>
+                    </div>
+
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <h1 style="font-size: 22px;color: white;" class="fw-bold mt-12">Our Contacts</h1>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-regular fa-map mt-11 pt-1"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-11">48 Iron
+                            Works Street,<br>
+                            Springfield, USA</h1>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-solid fa-phone mt-4"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-2">+1 555 010
+                            0199</h1>
+
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-regular fa-paper-plane mt-6"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-4">
+                            info@example.com
+                        </h1>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="grid grid-cols-4 gap-2 mt-12">
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_54_gallery-1.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_56_gallery-2.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_57_gallery-3.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_59_gallery-4.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_61_gallery-5.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_63_gallery-6.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_65_gallery-7.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_67_gallery-8.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--copyright-->
+    <div style="background-color:black;">
+        <div class="container p-4">
+            <div class="d-flex justify-content-center aligen-item-center">
+                <p style="color: #CACACA;font-size: 13px;" class="mt-6">Copyright ©2026 All rights reserved | This
+                    template is made with<i class="fa-solid fa-heart ms-1"></i>by <a style="color: #FF8FA3;"
+                        href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="DAZKO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <div style="position:absolute;z-index:9999;left:0;right:0;" class="container w-100">
+        <!-- Tighter top margin (mt-3) and top padding (pt-2) so the line sits high and items hug right below it -->
+        <nav class="navbar md:navbar-expand navbar-fitness rounded-0 bg-transparent px-4 pt-2 pb-0 mt-11">
+            <div class="container-fluid px-0 d-flex align-items-center justify-content-between">
+
+                <!-- Left: Brand Logo -->
+                <a class="navbar-brand d-inline-flex align-items-center gap-3 py-0 ms-12">
+                    <div style="width: 46px; height: 46px;"
+                        class="logo-box1 bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                        <i style="color: #E1193E;font-size: 26px;" class="fa-solid fa-weight-hanging"></i>
+                    </div>
+                    <div class="d-flex flex-column lh-1">
+                        <span style="color:white;font-size: 19px; letter-spacing: 0.5px;"
+                            class="brand-title fg-white text-uppercase fw-bolder">DAZKO</span>
+                        <span style="color:#FF8FA3;font-size: 11px;"
+                            class="brand-subtitle text-uppercase fst-italic fw-bold mt-1">Strength & Fitness</span>
+                    </div>
+                </a>
+                <button class="btn-icon navbar-toggler bg-transparent border-0" type="button" data-bs-theme="dark"
+                    data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer" aria-controls="navbarDarkDrawer"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog style="background-color: #111111; color: white;"
+                    class="drawer drawer-end text-bg-dark flex-grow-1" tabindex="-1" id="navbarDarkDrawer"
+                    aria-labelledby="navbarDarkDrawerLabel">
+                    <div class="drawer-header">
+                        <h5 style="color: white;" class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="drawer"
+                            aria-label="Close"></button>
+                    </div>
+                    <div
+                        class="drawer-body md:d-flex md:flex-row md:align-items-center md:justify-content-end nav-line-wrapper mb-2 md:mb-0">
+                        <ul class="nav navbar-nav md:flex-row md:gap-4 me-md-5">
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: #FF8FA3; letter-spacing: 0.5px;"
+                                    class="nav-link active text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    aria-current="page"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZKO.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZKO%20About%20us.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20trainers.html">Trainers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20Classes.html">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20Shedules.html">Schedules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/DAZAKO%20news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="font-size: 12px;color: white; letter-spacing: 0.5px;"
+                                    class="nav-link text-uppercase fw-bold mt-3 md:mt-0 py-md-2"
+                                    href="http://127.0.0.1:5500/DAZKO%20strength%20and%20fitness/Dazko_%20Gym,%20Strength%20and%20Fitness%20Training/DAZAKO%20contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <button
+                            style="color: white;background-color: #E1193E;font-size: 12px; letter-spacing: 0.8px; padding: 16px 32px;"
+                            class="btn btn-danger btn-dazko-slant text-uppercase fw-bold rounded-0 mt-3 md:mt-0"
+                            type="button">Become a member</button>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-autoplay="true"
+        data-bs-interval="4000" data-bs-pause="false">
+        <div class="carousel-indicators hero-indicators">
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="imgi_31_bg_3.jpeg" class="d-block w-100 hero-img" alt="Gym Workout">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content ms-12">
+                        <h1 style="font-size: 55px;font-weight: bold;" class="hero-title text-uppercase fst-italic">
+                            Shape your<br>perfect body</h1>
+                        <p class="hero-text">A small river named Duden flows by their place and supplies it with <br>the
+                            necessary regelialia.</p>
+                        <a href="#" class="btn-dazko text-uppercase">Take A tour now <i style="color: white;"
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="imgi_33_bg_1.jpeg" class="d-block w-100 hero-img" alt="Strength Training">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content ms-12">
+                        <h1 style="font-size: 55px;font-weight: bold;" class="hero-title text-uppercase fst-italic">
+                            Increase your<br>muscle power</h1>
+                        <p class="hero-text">A small river named Duden flows by their place and supplies it with <br>the
+                            necessary regelialia.</p>
+                        <a href="#" class="btn-dazko text-uppercase">Take a tour now <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="imgi_31_bg_2.jpeg" class="d-block w-100 hero-img" alt="Personal Coaching">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content ms-12">
+                        <h1 style="font-size: 55px;font-weight: bold;" class="hero-title text-uppercase fst-italic">You
+                            only fail, when <br> you stop trying</h1>
+                        <p class="hero-text">A small river named Duden flows by their place and supplies it with <br>the
+                            necessary regelialia.</p>
+                        <a href="#" class="btn-dazko text-uppercase">Take a tour now <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--next -->
+    <div class="container p-12">
+        <div class="row d-flex justify-content-center align-items-center mx-auto">
+            <div class="lg:col-4 col-12  mt-12 pt-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="imgi_6_about.jpeg" class="img-fluid">
+                </div>
+            </div>
+            <div class="lg:col-7 col-12  mt-5">
+                <div class="d-flex justify-content-start align-items-start">
+                    <h1 style="color: #E1193E;font-size: 14px;" class="text-uppercase fw-bold mt-9">Information About Us
+                    </h1>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <h1 style="font-size: 33px;font-weight: bold;" class="text-uppercase fw-bold">Dazko, a <span
+                            style="color: #E1193E;">Strength </span> and<br>Conditioning
+                        Training Center</h1>
+                </div>
+                <p style="font-size: 15px;" class="text-secondary mt-5">Far far away, behind the word mountains, far
+                    from the countries Vokalia and<br>
+                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at<br> the
+                    coast of
+                    the Semantics, a large language ocean.</p>
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-6"></i>
+                    <p style="font-size: 14px;" class="text-uppercase para-hover fw-bold mt-3 pt-2 ms-5">Men Fitness and
+                        Workout</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                    <p style="font-size: 14px;" class="text-uppercase para-hover fw-bold  ms-5"> Women Fitness and
+                        Workout</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                    <p style="font-size: 14px;" class="text-uppercase para-hover fw-bold ms-5"> Personal Trainings</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center px-12">
+                <div class="lg:col-3 col-12 custom-rgba-b p-8">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h1 style="font-size: 47px;color: white;" class="text-white mt-12">30+</h1>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p style="color: white;" class="text-white">Years of experience</p>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 custom-rgba-bg p-8">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h1 style="font-size: 47px;color: white;" class="text-white mt-12">100+</h1>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p style="color: white;" class="text-white">Fitness Trainers</p>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 custom-rgba-bg p-8">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h1 style="font-size: 47px;color: white;" class="text-white mt-12">310+</h1>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p style="color: white;" class="text-white">Best Equipment
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 custom-rgba-bg p-8">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h1 style="font-size: 47px;color: white;" class="text-white mt-12">10k+</h1>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p style="color: white;" class="text-white">Satisfied Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Join us  Section-->
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 style="color: #E1193E;font-size: 14px;" class="text-uppercase mt-12">Join Us Now</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p style="font-size: 33px;" class="fw-bold text-center">Join Our Free Workout<br>Training With <span
+                        style="color: #E1193E;">Dazko</span></p>
+            </div>
+            <div class="container p-12">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div style="border-right: 2px dotted #CCCCCC;" class="lg:col-4 col-12">
+                        <div class="card h-100 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="font-size: 90px;color: #E1193E;" class="fa-solid fa-dumbbell mt-12"></i>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 28px;" class="text-uppercase text-center fst-italic fw-bold">
+                                        Free Fitness<br>
+                                        Training</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="text-secondary text-center mt-4">A small river named Duden flows by
+                                        their<br> place and
+                                        supplies it with the necessary<br> regelialia. It is a paradisematic country,
+                                        in<br>
+                                        which roasted parts of sentences fly into<br> your mouth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-right: 2px dotted #CCCCCC;" class="lg:col-4 col-12">
+                        <div class="card h-100 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="font-size: 90px;color: #E1193E;" class="fa-solid fa-chart-line mt-12"></i>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 28px;" class="text-uppercase text-center fst-italic fw-bold">
+                                        Tons of Cardio &<br> Strength</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="text-secondary text-center mt-4">A small river named Duden flows by
+                                        their<br> place and
+                                        supplies it with the necessary<br> regelialia. It is a paradisematic country,
+                                        in<br>
+                                        which roasted parts of sentences fly into<br> your mouth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-4 col-12">
+                        <div class="card h-100 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="font-size: 90px;color: #E1193E;" class="fa-regular fa-id-card mt-12"></i>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 28px;" class="text-uppercase text-center fst-italic fw-bold">
+                                        No Commitment<br> Memberships
+                                    </h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="text-secondary text-center mt-4">A small river named Duden flows by
+                                        their<br> place and
+                                        supplies it with the necessary<br> regelialia. It is a paradisematic country,
+                                        in<br>
+                                        which roasted parts of sentences fly into<br> your mouth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Our Classes section-->
+    <div class="container text-center mb-4">
+        <p style="color: #E1193E; font-size: 12px; letter-spacing: 1.5px;" class="text-uppercase fw-bold mb-1">
+            Our Classes
+        </p>
+        <h2 class="text-uppercase fw-bolder" style="color: #050d1a;">
+            <span style="color: #E1193E;">Dazko</span> Workout Classes
+        </h2>
+    </div>
+    <div class="container-fluid px-2 p-12">
+        <div class="row g-2">
+            <!-- Card 1 -->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_35_classes-1.jpeg" class="w-100 h-100 object-fit-cover" alt="Body Building">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Body Building
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2-->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_37_classes-2.jpeg" class="w-100 h-100 object-fit-cover" alt="Weight Lifting">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Weight Lifting
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 lg:col-4">
+                <div class="class-card position-relative overflow-hidden">
+                    <img src="imgi_39_classes-3.jpeg" class="w-100 h-100 object-fit-cover" alt="Cardio">
+                    <div class="price-badge">$100</div>
+                    <div class="class-label position-absolute bottom-0 start-0 text-uppercase text-center">
+                        Cardio
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- all classes link-->
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="link">View All Classes<i style="font-size: 12px;color: #E1193E;"
+                class="fa-solid fa-arrow-right mt-1"></i></a>
+    </div>
+    <!--Pricing Section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 style="color: #E1193E;font-size: 14px;" class="text-uppercase mt-12">our pricing</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h1 style="font-size: 33px;" class="text-uppercase fw-bold">Pricing & <span
+                        style="color: #E1193E;">Packages</span></h1>
+            </div>
+            <div class="container-fluid mt-5 p-12">
+                <div class="row">
+                    <div class="lg:col-3 md:col-6 col-12">
+                        <div style="background-color: #FFFFFF;" class="card h-100 pricing-card rounded-0 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 15px;" class="text-uppercase fw-bold">Basic Plan</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="color: #7F7F7F;" class="fa-solid fa-dollar-sign"></i>
+                                    <div>
+                                        <h1 style="color: #E1193E;font-size: 55px;" class="fw-bold mt-5 me-8">49</h1>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Personal
+                                        Trainer</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Convenient
+                                        Time</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Special
+                                        Class</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Group
+                                        Training</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Free Fitness
+                                        Traning</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button style="background-color: #E1193E;color: white;"
+                                        class="btn btn-dange text-uppercase text-white w-75 rounded-0 mt-7"
+                                        type="button">get started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-3 md:col-6 col-12">
+                        <div style="background-color: #FFFFFF;" class="card h-100 pricing-card rounded-0 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 15px;" class="text-uppercase fw-bold">Beginner Plan
+                                    </h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="color: #7F7F7F;" class="fa-solid fa-dollar-sign"></i>
+                                    <div>
+                                        <h1 style="color: #E1193E;font-size: 55px;" class="fw-bold mt-5 me-8">79</h1>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Personal
+                                        Trainer</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Convenient
+                                        Time</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Special
+                                        Class</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Group
+                                        Training</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Free Fitness
+                                        Traning</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button style="background-color: #E1193E;color: white;"
+                                        class="btn btn-dange text-uppercase text-white w-75 rounded-0 mt-7"
+                                        type="button">get started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-3 md:col-6 col-12">
+                        <div style="background-color: #FFFFFF;" class="card h-100 pricing-card rounded-0 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 15px;" class="text-uppercase fw-bold">Premium Plan</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="color: #7F7F7F;" class="fa-solid fa-dollar-sign"></i>
+                                    <div>
+                                        <h1 style="color: #E1193E;font-size: 55px;" class="fw-bold mt-5 me-8">109</h1>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Personal
+                                        Trainer</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Convenient
+                                        Time</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Special
+                                        Class</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Group
+                                        Training</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Free Fitness
+                                        Traning</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button style="background-color: #E1193E;color: white;"
+                                        class="btn btn-dange text-uppercase text-white w-75 rounded-0 mt-7"
+                                        type="button">get started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-3 md:col-6 col-12">
+                        <div style="background-color: #FFFFFF;" class="card h-100 pricing-card rounded-0 border-0">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <h1 style="font-size: 15px;" class="text-uppercase fw-bold">Ultimate Plan</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <i style="color: #7F7F7F;" class="fa-solid fa-dollar-sign"></i>
+                                    <div>
+                                        <h1 style="color: #E1193E;font-size: 55px;" class="fw-bold mt-5 me-8">149</h1>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Personal
+                                        Trainer</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Convenient
+                                        Time</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Special
+                                        Class</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Group
+                                        Training</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <i style="font-size: 12px;color: #E1193E;" class="fa-solid fa-arrow-right mt-1"></i>
+                                    <h1 style="font-size: 17px;color: #7F7F7F;" class="text-secondary mt-4">Free Fitness
+                                        Traning</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button style="background-color: #E1193E;color: white;"
+                                        class="btn btn-dange text-uppercase text-white w-75 rounded-0 mt-7"
+                                        type="button">get started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- some Cards section -->
+    <div class="container-fluid p-12">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div style="border-right: 2px dotted #CACACA;" class="lg:col-3 col-12">
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 55px;color: #E1193E;" class="fa-solid fa-volleyball mt-12"></i>
+                    <h1 style="font-size: 22px;" class="text-uppercase fst-italic fw-bold mt-12 ms-2">Thousands of
+                        Equipment
+                    </h1>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <p style="color: #7F7F7F;" class="ms-12 ps-8">A small river named Duden flows by their<br> place and
+                        supplies it with the necessary<br>
+                        regelialia.</p>
+                </div>
+            </div>
+            <div style="border-right: 2px dotted #CACACA;" class="lg:col-3 col-12">
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 55px;color: #E1193E;" class="fa-solid fa-dumbbell mt-12"></i>
+                    <h1 style="font-size: 22px;" class="text-uppercase fst-italic fw-bold mt-12 ms-2">Open 24/7 Dazko
+                        Gym<br> Fitness
+                    </h1>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <p style="color: #7F7F7F;" class="ms-12 ps-8">A small river named Duden flows by their<br> place and
+                        supplies it with the necessary<br>
+                        regelialia.</p>
+                </div>
+            </div>
+            <div class="lg:col-3 col-12">
+                <div class="d-flex justify-content-start align-items-start">
+                    <i style="font-size: 55px;color: #E1193E;" class="fa-solid fa-bandage mt-12"></i>
+                    <h1 style="font-size: 22px;" class="text-uppercase fst-italic fw-bold mt-12 ms-2">Food Supplements
+                    </h1>
+                </div>
+                <div class="d-flex justify-content-start align-items-start">
+                    <p style="color: #7F7F7F;" class="ms-12 ps-8">A small river named Duden flows by their<br> place and
+                        supplies it with the necessary<br>
+                        regelialia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Vedio section-->
+    <div class="v-section">
+        <div class="overlay"></div>
+        <div class="container-xl">
+            <!-- Heading -->
+            <div class="row justify-content-center">
+                <div class="col-md-8 heading-section-white text-center mb-5">
+                    <span class="subheading text-uppercase">Watch Our Stories</span>
+                    <h2 class="mb-0 text-uppercase">Members Success <span style="color: #FF8FA3;">Stories</span></h2>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center mt-5">
+                <!-- Card 1 -->
+                <div class="lg:col-6">
+                    <div class="vid-img d-flex align-items-end text-start"
+                        style="background-image: url('imgi_39_success-1.jpeg');">
+                        <div class="text">
+                            <!-- Trigger Button -->
+                            <button type="button"
+                                class="icon-video d-inline-flex align-items-center justify-content-center"
+                                data-bs-toggle="dialog" data-bs-target="#exampleDialog"
+                                aria-label="Play the success story video">
+                            </button>
+                            <!-- Bootstrap 6 Native Dialog -->
+                            <dialog class="dialog dialog-lg h-75 w-75" id="exampleDialog" data-bs-theme="dark">
+                                <div class="dialog-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="dialog-body h-100">
+                                    <iframe width="100%" height="100%"
+                                        src="https://www.youtube.com/embed/8vLeWuk2cUg?si=NY9Wky8A9lEp9LrT"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </dialog>
+                            <h3>From 264 lbs to 154 lbs, A Great transformation in my life.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="lg:col-6">
+                    <div class="vid-img d-flex align-items-end text-start"
+                        style="background-image: url('imgi_31_bg_2.jpeg');">
+                        <div class="text">
+                            <!-- Trigger Button -->
+                            <button type="button"
+                                class="icon-video d-inline-flex align-items-center justify-content-center"
+                                data-bs-toggle="dialog" data-bs-target="#exampleDialog"
+                                aria-label="Play the success story video">
+                            </button>
+
+                            <!-- Bootstrap 6 Native Dialog -->
+                            <dialog class="dialog dialog-lg h-75 w-75" id="exampleDialog" data-bs-theme="dark">
+                                <div class="dialog-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="dialog-body h-100">
+                                    <iframe width="100%" height="100%"
+                                        src="https://www.youtube.com/embed/8vLeWuk2cUg?si=NY9Wky8A9lEp9LrT"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </dialog>
+                            <h3>Fifty and Fitter Than Ever: A Member's Story</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Table section-->
+    <div class="container py-4">
+        <div class="row">
+            <div class="d-flex justify-content-center aligen-item-center">
+                <h1 style="font-size:14px;color:  #E1193E;" class="text-uppercase fw-bold">Schedules</h1>
+            </div>
+            <div class="d-flex justify-content-center aligen-item-center">
+                <h1 style="font-size: 30px;" class="text-uppercase fw-bold">Fitness <span
+                        style="color: #E1193E;">Schedules</span></h1>
+            </div>
+            <!--Table container-->
+            <div class="container p-12 ">
+                <div class="row justify-content-center">
+                    <div class="col-12 lg:col-10">
+
+                        <div class="table-responsive mt-5">
+                            <table class="table table-bordered align-middle text-center mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Time</th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Monday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Tuesday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Wednesday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Thursday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Friday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color: white;" class="text-white"
+                                            scope="col">Saturday
+                                        </th>
+                                        <th style="background-color: #1D2CB5;color:white;" class="text-white"
+                                            scope="col">Sunday
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="background-color: #E1193E;color: white;"
+                                            class="text-white text-nowrap" scope="row">8am-9am</th>
+                                        <td>Body Building</td>
+                                        <td style="background-color: #F4F6FC;">Weight Lifting</td>
+                                        <td></td>
+                                        <td style="background-color: #F4F6FC;">Yoga</td>
+                                        <td>Aerobics</td>
+                                        <td style="background-color: #F4F6FC;">Running</td>
+                                        <td>Stretching</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: #E1193E;color: white;"
+                                            class="text-white text-nowrap" scope="row">10am-11am</th>
+                                        <td>Weight Lifting</td>
+                                        <td style="background-color: #F4F6FC;">Body Building</td>
+                                        <td>Cardio</td>
+                                        <td style="background-color: #F4F6FC;">Yoga</td>
+                                        <td>Aerobics</td>
+                                        <td style="background-color: #F4F6FC;">Running</td>
+                                        <td>Stretching</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: #E1193E;color: white;"
+                                            class="text-white text-nowrap" scope="row">1pm-2pm</th>
+                                        <td></td>
+                                        <td style="background-color: #F4F6FC;">Weight Lifting</td>
+                                        <td>Cardio</td>
+                                        <td style="background-color: #F4F6FC;">Yoga</td>
+                                        <td>Aerobics</td>
+                                        <td style="background-color: #F4F6FC;">Running</td>
+                                        <td>Stretching</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: #E1193E;color: white;"
+                                            class="text-white text-nowrap" scope="row">3pm-5pm</th>
+                                        <td>Aerobics</td>
+                                        <td style="background-color: #F4F6FC;">Weight Lifting</td>
+                                        <td>Cardio</td>
+                                        <td style="background-color: #F4F6FC;">Yoga</td>
+                                        <td>Body Building</td>
+                                        <td style="background-color: #F4F6FC;"></td>
+                                        <td>Stretching</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: #E1193E;color: white;"
+                                            class="text-white text-nowrap" scope="row">7pm-9pm</th>
+                                        <td>Body Building</td>
+                                        <td style="background-color: #F4F6FC;">Weight Lifting</td>
+                                        <td>Cardio</td>
+                                        <td style="background-color: #F4F6FC;"></td>
+                                        <td>Aerobics</td>
+                                        <td style="background-color: #F4F6FC;">Running</td>
+                                        <td>Stretching</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Trainer Heading -->
+            <div class="container mt-5 mb-4">
+                <div class="text-center">
+                    <p style="font-size: 14px; color: #E1193E;" class="text-uppercase fw-bold mb-1">Trainer</p>
+                    <h2 style="font-size: 22px;" class="text-uppercase fw-bold">
+                        Fitness <span style="color: #E1193E;">Trainer</span>
+                    </h2>
+                </div>
+            </div>
+            <!--Trainers Section-->
+            <div class="container-fluid px-0">
+                <div class="trainer-bg-section py-4">
+                    <div class="container">
+                        <div class="row g-0">
+                            <!-- Card 1 -->
+                            <div class="col-12 sm:col-6 lg:col-3 p-6">
+                                <div class="trainer-card">
+                                    <img src="Dazko_ Gym, Strength and Fitness Training/imgi_7_trainer-1.jpeg"
+                                        class="img-fluid w-100 trainer-photo" alt="Aron Mighty">
+                                    <div class="trainer-badge">
+                                        <div class="badge-inner text-end text-white fw-bold text-uppercase">
+                                            Aron<br>Mighty
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-12 sm:col-6 lg:col-3 p-6">
+                                <div class="trainer-card">
+                                    <img src="Dazko_ Gym, Strength and Fitness Training/imgi_3_trainer-2.jpeg"
+                                        class="img-fluid w-100 trainer-photo" alt="Alicia Brown">
+                                    <div class="trainer-badge">
+                                        <div class="badge-inner text-end text-white fw-bold text-uppercase">
+                                            Alicia<br>Brown
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-12 sm:col-6 lg:col-3 p-6">
+                                <div class="trainer-card">
+                                    <img src="Dazko_ Gym, Strength and Fitness Training/imgi_9_trainer-3.jpeg"
+                                        class="img-fluid w-100 trainer-photo" alt="Anne Henderson">
+                                    <div class="trainer-badge">
+                                        <div class="badge-inner text-end text-white fw-bold text-uppercase">
+                                            Anne<br>Henderson
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col-12 sm:col-6 lg:col-3 p-6">
+                                <div class="trainer-card">
+                                    <img src="Dazko_ Gym, Strength and Fitness Training/imgi_10_trainer-4.jpeg"
+                                        class="img-fluid w-100 trainer-photo" alt="Bruce Grapler">
+                                    <div class="trainer-badge">
+                                        <div class="badge-inner text-end text-white fw-bold text-uppercase">
+                                            Bruce<br>Grapler
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Oval carousel-->
+            <div testimonial-section-bg>
+                <div class="container-fluid p-0 ">
+                    <div class="row g-0">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h1 style="color: #E1193E;font-size: 12px;" class="text-uppercase fw-bold mt-5">Testimonial
+                            </h1>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h1 style="font-size: 28px;" class="text-uppercase fw-bold mt-1">Happy People</h1>
+                        </div>
+                        <section class="py-5">
+                            <div class="container">
+                                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Slides -->
+                                    <div class="carousel-inner">
+                                        <!-- Slide 1 (3 Cards) -->
+                                        <div class="carousel-item active">
+                                            <div class="row g-4 pt-4 pb-3">
+                                                <!-- Card 1 -->
+                                                <div class="lg:col-4 md:col-4 col-12">
+                                                    <div class="testimonial-card h-100">
+                                                        <div class="quote-badge">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                        </div>
+                                                        <p class="testimonial-text">
+                                                            Far far away, behind the word mountains, far from the
+                                                            countries
+                                                            Vokalia and Consonantia, there live the blind texts.
+                                                        </p>
+                                                        <div class="d-flex align-items-center mt-4">
+                                                            <div class="avatar-circle">PN</div>
+                                                            <div class="ms-3">
+                                                                <h6 class="client-name mb-0 fst-italic">PRIYA NANDAKUMAR
+                                                                </h6>
+                                                                <span class="client-role">MARKETING MANAGER</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card 2 -->
+                                                <div class=" lg:col-4 md:col-4 col-12">
+                                                    <div class="testimonial-card h-100">
+                                                        <div class="quote-badge">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                        </div>
+                                                        <p class="testimonial-text">
+                                                            Far far away, behind the word mountains, far from the
+                                                            countries
+                                                            Vokalia and Consonantia, there live the blind texts.
+                                                        </p>
+                                                        <div class="d-flex align-items-center mt-4">
+                                                            <div class="avatar-circle">TH</div>
+                                                            <div class="ms-3">
+                                                                <h6 class="client-name mb-0 fst-italic">TOMAS HALLGREN
+                                                                </h6>
+                                                                <span class="client-role">SOFTWARE ENGINEER</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card 3 -->
+                                                <div class="lg:col-4 md:col-4 col-12">
+                                                    <div class="testimonial-card h-100">
+                                                        <div class="quote-badge">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                        </div>
+                                                        <p class="testimonial-text">
+                                                            Far far away, behind the word mountains, far from the
+                                                            countries
+                                                            Vokalia and Consonantia, there live the blind texts.
+                                                        </p>
+                                                        <div class="d-flex align-items-center mt-4">
+                                                            <div class="avatar-circle">LO</div>
+                                                            <div class="ms-3">
+                                                                <h6 class="client-name mb-0 fst-italic">LENA OKAFOR</h6>
+                                                                <span class="client-role">PRIMARY TEACHER</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="carousel-item">
+                                            <div class="row g-4 pt-4 pb-3">
+                                                <!-- Card 4 -->
+                                                <div class="lg:col-4 md:col-4 col-12">
+                                                    <div class="testimonial-card h-100">
+                                                        <div class="quote-badge">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                        </div>
+                                                        <p class="testimonial-text">
+                                                            Far far away, behind the word mountains, far from the
+                                                            countries
+                                                            Vokalia and Consonantia, there live the blind texts.
+                                                        </p>
+                                                        <div class="d-flex align-items-center mt-4">
+                                                            <div class="avatar-circle">RS</div>
+                                                            <div class="ms-3">
+                                                                <h6 class="client-name mb-0 fst-italic">ROGER SCOTT</h6>
+                                                                <span class="client-role">MARKETING MANAGER</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Card 5 -->
+                                                <div class="lg:col-4 md:col-4 col-12">
+                                                    <div class="testimonial-card h-100">
+                                                        <div class="quote-badge">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                        </div>
+                                                        <p class="testimonial-text">
+                                                            Far far away, behind the word mountains, far from the
+                                                            countries
+                                                            Vokalia and Consonantia, there live the blind texts.
+                                                        </p>
+                                                        <div class="d-flex align-items-center mt-4">
+                                                            <div class="avatar-circle">MS</div>
+                                                            <div class="ms-3">
+                                                                <h6 class="client-name mb-0 fst-italic">MICHAEL SMITH
+                                                                </h6>
+                                                                <span class="client-role">PRODUCT DESIGNER</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Bottom Dot Indicators -->
+                                    <div class="carousel-indicators custom-dots position-static mt-3">
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--OUR BLOG Section-->
+            <div class="container py-5 p-12">
+                <!-- Section Heading -->
+                <div class="text-center mb-5">
+                    <p style="color: #E1193E; font-size: 12px; letter-spacing: 1px;"
+                        class="text-uppercase fw-bold mb-1">
+                        OUR BLOG
+                    </p>
+                    <h2 style="font-size: 33px;" class="text-uppercase fw-bold">
+                        Recent Blog
+                    </h2>
+                </div>
+                <div class="row g-0 mt-12">
+                    <div class="col-12 md:col-6 lg:col-3">
+                        <article class="card border-0 rounded-0 h-100">
+                            <div style="height: 250px;">
+                                <img src="imgi_44_image_1.jpeg" class="w-100 h-100 object-fit-cover rounded-0"
+                                    alt="...">
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-center p-4" style="height: 250px;">
+                                <p class="text-uppercase" style="font-size: 11px;">
+                                    <span class="text-muted">DEC. 20, 2020</span>
+                                    <span style="color: #E1193E;" class="fw-bold ms-2">3 COMMENTS</span>
+                                </p>
+                                <h5 style="font-size: 19px;" class="card-title text-uppercase fw-bold fs-6 fst-italic">
+                                    Really Good Workout, Can<br> Feel It Working
+                                </h5>
+                                <p class="card-text text-muted small mb-0">
+                                    A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 md:col-6 lg:col-3">
+                        <article class="card border-0 rounded-0 h-100">
+                            <div class="card-body d-flex flex-column justify-content-center p-4" style="height: 250px;">
+                                <p class="text-uppercase mb-2" style="font-size: 11px;">
+                                    <span class="text-muted">DEC. 20, 2020</span>
+                                    <span style="color: #E1193E;" class="fw-bold ms-2">3 COMMENTS</span>
+                                </p>
+                                <h5 style="font-size: 19px;" class="card-title text-uppercase fw-bold fst-italic">
+                                    Five Strength Moves Every<br> Beginner Should Learn
+                                </h5>
+                                <p class="card-text text-muted small mb-0">
+                                    A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.
+                                </p>
+                            </div>
+                            <div style="height: 250px;">
+                                <img src="imgi_46_image_2.jpeg" class="w-100 h-100 object-fit-cover rounded-0"
+                                    alt="...">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 md:col-6 lg:col-3">
+                        <article class="card border-0 rounded-0 h-100">
+                            <div style="height: 250px;">
+                                <img src="imgi_48_image_3.jpeg" class="w-100 h-100 object-fit-cover rounded-0"
+                                    alt="...">
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-center p-4" style="height: 250px;">
+                                <p class="text-uppercase mb-2" style="font-size:11px;">
+                                    <span class="text-muted">DEC. 20, 2020</span>
+                                    <span style="color: #E1193E;" class="fw-bold ms-2">3 COMMENTS</span>
+                                </p>
+                                <h5 style="font-size: 19px;" class="card-title text-uppercase fw-bold fs-6 fst-italic">
+                                    How Much Cardio Do You<br> Really Need?
+                                </h5>
+                                <p class="card-text text-muted small mb-0">
+                                    A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 md:col-6 lg:col-3">
+                        <article class="card border-0 rounded-0 h-100">
+                            <div class="card-body d-flex flex-column justify-content-center p-4" style="height: 250px;">
+                                <p class="text-uppercase mb-2" style="font-size: 11px;">
+                                    <span class="text-muted">DEC. 20, 2020</span>
+                                    <span style="color: #E1193E;" class="fw-bold ms-2">3 COMMENTS</span>
+                                </p>
+                                <h5 style="font-size: 19px;" class="card-title text-uppercase fw-bold fs-6 fst-italic">
+                                    Mobility Work That Fixes<br> Stiff Hips
+                                </h5>
+                                <p class="card-text text-muted small mb-0">
+                                    A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.
+                                </p>
+                            </div>
+                            <div style="height: 250px;">
+                                <img src="imgi_49_image_4.jpeg" class="w-100 h-100 object-fit-cover rounded-0"
+                                    alt="...">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--input box section-->
+    <div class="bmi-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 lg:col-6">
+                    <!-- Section Header -->
+                    <div class="mb-4">
+                        <p class="bmi-subtitle text-uppercase mb-1">GET YOUR BODY MAX INDEX</p>
+                        <h2 class="bmi-title fg-white text-uppercase mb-0">
+                            WHAT IS YOUR <span>BMI</span>
+                        </h2>
+                    </div>
+
+                    <!-- Standard / Metric Tab Labels (Added .active to Standard so it's blue) -->
+                    <div class="d-flex gap-2 bmi-tabs">
+                        <label for="unitStandard" class="bmi-tab active">Standard</label>
+                        <label for="unitMetric" class="bmi-tab">Metric</label>
+                    </div>
+
+                    <!-- Calculator Card -->
+                    <div class="bmi-card">
+                        <div class="standard-fields">
+                            <div class="mb-4">
+                                <label class="bmi-label text-uppercase">YOUR HEIGHT</label>
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <input type="number" name="feet" class="form-control bmi-input"
+                                            placeholder="Feet" min="1" max="9">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="number" name="inches" class="form-control bmi-input"
+                                            placeholder="Inches" min="0" max="11">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="bmi-label text-uppercase">YOUR WEIGHT</label>
+                                <input type="number" name="pounds" class="form-control bmi-input" placeholder="Pounds"
+                                    min="1">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-center pt-1">
+                            <div class="col-12 sm:col-6">
+                                <button type="submit" class="btn btn-compute text-uppercase">COMPUTE
+                                    BMI</button>
+                            </div>
+                            <div class="col-12 sm:col-6">
+                                <div class="bmi-result-box">Your BMI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fotter-->
+    <div style="background-color: #030513;">
+        <div class="container p-12">
+            <div class="row d-flex justify-content-center aligen-item-center">
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start align-items-start">
+                        <a class="navbar-brand d-inline-flex align-items-center mt-9 ms-3" href="#">
+                            <div
+                                class="logo-box1 bg-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i style="color: #E1193E;font-size: 32px;" class="fa-solid fa-weight-hanging"></i>
+                            </div>
+                            <div class="d-flex flex-column lh-1">
+                                <span style="color:white;font-size: 20px;"
+                                    class="brand-title fg-white text-uppercase fw-bolder">DAZKO</span>
+                                <span style="color:#FF8FA3;"
+                                    class="brand-subtitle text-uppercase fst-italic fw-bold mt-1">Strength &
+                                    Fitness</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <p style="font-size: 13px;color: #B4B4B9;" class="mt-12 ms-3">
+                            A small river named Duden flows by their place and<br> supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start gap-4 mt-12">
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-x-twitter mt-4"></i>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-facebook-f mt-4"></i>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center aligen-item-center">
+                            <i style="color: white;" class="fa-brands fa-instagram mt-4"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <h1 style="font-size: 22px;color: white;" class="fw-bold mt-12">Explore</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-12"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-11 pt-1">About us</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Trainers Team</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Awesome Classes</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Pricing Packages</h1>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start footer-link">
+                        <i style="font-size: 13px;" class="fa-solid fa-arrow-right-long mt-4"></i>
+                        <h1 style="font-size: 16px;" class="ms-4 mt-2">Latest News</h1>
+                    </div>
+
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <h1 style="font-size: 22px;color: white;" class="fw-bold mt-12">Our Contacts</h1>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-regular fa-map mt-11 pt-1"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-11">48 Iron
+                            Works Street,<br>
+                            Springfield, USA</h1>
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-solid fa-phone mt-4"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-2">+1 555 010
+                            0199</h1>
+
+                    </div>
+                    <div class="d-flex justify-content-start aligen-item-start">
+                        <i style="color: #E1193E;" class="fa-regular fa-paper-plane mt-6"></i>
+                        <h1 style="font-size: 18px;color: #CACACA;font-weight: lighter;" class="ms-5 mt-4">
+                            info@example.com
+                        </h1>
+                    </div>
+                </div>
+                <div class="lg:col-3 col-12 mt-12">
+                    <div class="grid grid-cols-4 gap-2 mt-12">
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_54_gallery-1.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_56_gallery-2.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_57_gallery-3.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_59_gallery-4.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_61_gallery-5.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_63_gallery-6.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_65_gallery-7.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                        <div class="ratio ratio-1x1">
+                            <img src="imgi_67_gallery-8.jpeg" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--copyright-->
+    <div style="background-color:black;">
+        <div class="container p-4">
+            <div class="d-flex justify-content-center aligen-item-center">
+                <p style="color: #CACACA;font-size: 13px;" class="mt-6">Copyright ©2026 All rights reserved | This
+                    template is made with<i class="fa-solid fa-heart ms-1"></i>by <a style="color: #FF8FA3;"
+                        href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
